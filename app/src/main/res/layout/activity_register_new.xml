@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lukeboyde.fitnessgoals.RegisterNew">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue"></RelativeLayout>
+
+    <TextView
+        android:id="@+id/fitgoaltitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textColor="@color/orange"
+        android:textSize="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Fitness Goals"/>
+
+    <EditText
+        android:id="@+id/etfirstn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fitgoaltitle"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="First Name" />
+
+    <EditText
+        android:id="@+id/etlastn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/etfirstn"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/etlastn"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPasswordR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:id="@+id/etConPass"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPasswordR"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etPasswordR"
+        android:layout_below="@+id/etConPass"
+        android:layout_marginTop="30dp"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/btnLogin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etConPass"
+        android:layout_alignTop="@+id/btnReg"
+        android:text="Login" />
+
+</RelativeLayout>

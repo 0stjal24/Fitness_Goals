@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="home_options">Home Screen Options
+        <item>Create Workout</item>
+        <item>Choose Workout</item>
+        <item>Pictures</item>
+        <item>Stopwatch</item>
+        <item>Track Run</item>
+    </string-array>
+</resources>
